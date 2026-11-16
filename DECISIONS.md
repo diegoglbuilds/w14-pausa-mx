@@ -49,6 +49,26 @@ Every tier receives the same core math, uncertainty labels, buyer-controlled res
 - The Partner CTA is local intent telemetry only; an actual partner contact channel has not been established.
 - This milestone was not manually browser-verified because no browser automation/tooling is configured in the repository.
 
+## Week 14 synthetic persona pass
+
+Method: source, component, copy, and state review using the synthetic Mariana persona from `docs/PACKET.md`. No browser automation tools are available in this environment, so no browser interaction or real-user evidence is claimed.
+
+Likely confusions and hesitations logged:
+
+- On `/`, the Quick Check asks for the installment amount and count, but a shopper who knows only the monthly payment may not know whether fees or other charges are included. The result correctly says unknown terms remain unknown, but she still has to supply the total count.
+- On `/pricing`, Free is MX$0 and contains the core check, while Plus is MX$59/month. Before this pass, the reason to pay could read as paying for the arithmetic; the free-math assurance appeared only after all three tier cards.
+- The revenue simulator projects Pausa MX business revenue, not Mariana's purchase cost or personal savings. Its placement on the pricing route could make it feel business-oriented or like an earnings promise, though its copy labels assumptions as hypotheses and projections as unobserved.
+- The initial simulator values are examples, but precise outputs can still look more certain than the assumptions behind them.
+- Plus is explicitly described as convenience only, but its hypothetical saved preferences, history, exports, and reminders may still make her wonder whether it gives a safer recommendation.
+- Partner is described for organizations, and the page says payers do not direct results; the employer/wellness payer model may nevertheless raise concern about influence. Retailers are ruled out, but partner independence remains a trust question.
+- Saved scenarios can be loaded and deleted with labeled controls, and are described as local to this browser. A user may still not know local means unsynced/device-bound until seeing the saved list or footer.
+- English segment names and business revenue modeling amid consumer plans may make pricing feel designed for a business audience and prompt her to leave.
+- The 10:1 memo openly identifies free alternatives and unverified time savings, repeat use, and willingness to pay; its effort-saving case remains a business hypothesis rather than evidence she receives ten times the price in value.
+
+Worst confusion: MX$59/month could look like a subscription for the same math she can do in a calculator, especially because the Free-versus-Plus reassurance was separated from the tier cards.
+
+Fix: state inside the Plus card that the calculation and same decision information are free, and that MX$59/month is only a convenience hypothesis with no active subscription. Regression coverage asserts this explanation appears inside the Plus card.
+
 ## Security status
 
 - `.env*` files are ignored; there are no required secrets or service credentials.
