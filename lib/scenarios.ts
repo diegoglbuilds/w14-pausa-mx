@@ -4,7 +4,7 @@ export const SCENARIO_KEY = 'pausa-mx:w14:scenarios';
 const scenarioSchema = z.object({id:z.string().min(1).max(80),name:z.string().trim().min(1).max(40),input:simulatorInputSchema});
 export type Scenario = z.infer<typeof scenarioSchema>;
 export function readScenarios(storage:Pick<Storage,'getItem'>):Scenario[] {
-  try { const raw=storage.getItem(SCENARIO_KEY); if(!raw)return []; const parsed=JSON.parse(raw); const result=z.array(scenarioSchema).max(3).safeParse(parsed); return result.success?result.data:[]; } catch { return []; }
+  try { const raw=storage.getItem(SCENARIO_KEY); if(!raw)return []; const parsed=JSON.parse(raw); if(!Array.isArray(parsed))return []; return parsed.map(item=>scenarioSchema.safeParse(item)).filter((result):result is {success:true;data:Scenario}=>result.success).slice(0,3).map(result=>result.data); } catch { return []; }
 }
 export function saveScenario(storage:Pick<Storage,'getItem'|'setItem'>,name:string,input:SimulatorInput):Scenario[] {
   const safeName=name.trim(); if(!safeName || safeName.length>40) throw new Error('El nombre debe tener entre 1 y 40 caracteres.');
