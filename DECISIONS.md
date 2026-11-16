@@ -46,6 +46,7 @@ Every tier receives the same core math, uncertainty labels, buyer-controlled res
 - Actual time saved, repeated use, willingness to pay, paid conversion, avoided-mistake frequency, and partner willingness to pay remain unverified. The 10:1 case is not proven.
 - Static local storage can be cleared by the browser and does not synchronize across devices. This version intentionally has no billing, remote analytics, or partner reporting.
 - Revenue outputs are simplified projections and exclude fixed costs, taxes, churn, refunds, payment processing, and operational variation.
+- The Partner CTA is local intent telemetry only; an actual partner contact channel has not been established.
 - This milestone was not manually browser-verified because no browser automation/tooling is configured in the repository.
 
 ## Security status
