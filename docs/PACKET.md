@@ -1,470 +1,403 @@
-# PACKET — WEEK 14
-## Pausa MX — Pricing: The Number That Tells the Truth
+# PACKET — WEEK 15
+## Pausa MX — Distribution: Your Method Feeds Your Audience
 **Owner:** Diego Gil  
-**Role lens:** TECHNOLOGIST  
-**Week:** 14  
-**Status:** Packet before code
-
----
+**Role lens:** USER  
+**Venture:** Pausa MX  
+**Status:** Packet update before implementation
 
 ## 1. Problem in my words
+Pausa MX already has a working pre-purchase financial check and a Week 14 pricing layer. Week 15 is about distribution: defining one first audience, one moment of need, one bounded promise, and a useful path to action.
 
-Pausa MX already helps a shopper pause before a purchase and see the consequence of installment payments. Week 14 adds the business truth: the venture needs a real price, a visible free-vs-paid line, and a revenue model whose assumptions anyone can inspect.
+The risk is becoming generic “financial wellness” content in a feed crowded with synthetic money advice. The Week 15 slice must demonstrate one concrete purchase decision and lead directly to an honest next action.
 
-The risk is pretending that a pricing page or simulator proves demand. Software can calculate revenue and track clicks, but it cannot turn a hypothetical conversion rate into willingness to pay. This slice must therefore make pricing measurable without hiding uncertainty.
+## 2. Exact user and moment
+**First audience:** Mexican online shoppers considering an installment purchase at or near checkout.
 
----
+**Moment of need:** the shopper sees a monthly installment amount that looks manageable but has not yet reconstructed how it overlaps with other payments, fees, or commitments.
 
-## 2. Exact user
+**Current workaround:** monthly payment + calculator/banking app + memory.
 
-### Primary user
-A Mexican online shopper, roughly 18–35, who buys with installments or credit, wants a fast pre-purchase check, and will not complete a full budgeting workflow every time.
-
-### Potential payer segment 1
-The same shopper, if repeated convenience creates enough value to justify a paid plan.
-
-### Potential payer segment 2
-A buyer-aligned organization such as an employer benefits program or financial-wellness partner that may pay for access without controlling Pausa MX's recommendation.
-
-### Existing alternative
-Calculator + banking app + memory.
-
-The alternative is familiar and usually costs MX$0, so Pausa MX cannot charge for arithmetic alone.
-
----
+**User vs payer:** the first user is the shopper. Possible later payers remain the shopper for convenience or a buyer-aligned employer/financial-wellness partner. Week 15 is user-first.
 
 ## 3. Success definition
+Before the module closes:
+1. Existing Pausa MX release remains accessible.
+2. A shareable Week 15 venture/distribution route clearly names the audience and moment.
+3. The promise is concrete and bounded.
+4. Brand voice and visual system are documented and implemented.
+5. Six concepts exist across three recurring series.
+6. Three assets are finished, one per series, across at least two formats.
+7. Two finished assets lead to the same working next action.
+8. The creative process is visible.
+9. Human approval remains required before publication.
+10. No asset invents savings, testimonials, reach, clicks, or debt-prevention claims.
+11. Actual distribution results are recorded only after a real test.
+12. Mechanical and synthetic-persona evidence are preserved.
 
-Before the Week 14 module closes:
+## 4. Positioning
+**Weak line:** “Financial wellness for young people.”
 
-1. `/pricing` is live.
-2. It shows 2–3 tiers and two customer segments.
-3. The free-vs-paid boundary is explicit.
-4. A revenue simulator accepts:
-   - active users
-   - paid conversion %
-   - monthly price
-   - optional estimated monthly cost-to-serve
-5. It outputs:
-   - paid users
-   - monthly revenue
-   - annual revenue
-   - estimated monthly contribution
-   - downside scenario
-6. Users can save at least three simulator scenarios locally.
-7. `/about` includes a one-page 10:1 Memo.
-8. Pricing assumptions are visibly labeled as hypotheses.
-9. Analytics distinguish page views, simulator usage, CTA intent, and actual payment evidence.
-10. No core financial safety result changes because of plan tier.
-11. Mechanical tests find and fix at least one real bug.
-12. Persona testing finds and fixes at least one major confusion.
+**Week 15 positioning:** Pausa MX is a pre-checkout decision tool for Mexican online shoppers considering installment purchases.
 
----
+**Evidence-backed promise:** **See the consequence before checkout.**
 
-## 4. Image-generated mockup
+**Promise we will NOT make:** Pausa MX prevents debt, guarantees affordability, saves a specific amount, or makes the “correct” purchase decision.
 
-Use the generated Week 14 Pausa MX pricing mockup as the visual reference for this build.
+## 5. Brand
+### Voice rules
+1. **Concrete, not dramatic.** Start with one recognizable purchase situation.
+2. **Calm, not moralizing.** No shame or “bad with money” language.
+3. **Bounded, not absolute.** Show assumptions and uncertainty.
 
-**Expected repo asset path:**  
-`assets/mockup-pausa-mx-w14.png`
+**Weak line:** “Make smarter financial decisions with Pausa MX.”  
+**Rewrite:** “Before you tap Buy, see what the payment adds.”
 
-The mockup is directional, not pixel-perfect. Preserve the existing Week 13 visual system where it conflicts with this concept.
+### Visual system
+- Deep navy: trust / primary text
+- Purple: action / emphasis
+- Soft blue-gray: surfaces
+- White: background
+- Neutral gray: caveats / assumptions
+- No red fear styling for ordinary purchase decisions
 
----
+### Repeatable visual layout
+1. purchase situation
+2. visible number / consequence
+3. one missing question
+4. Pausa MX check
+5. bounded CTA
 
-## 5. Product flow
+## 6. Image-generated mockup
+Generate a Week 15 campaign-system mockup showing:
+- one vertical story asset
+- one square share-card asset
+- one landing-page content block
+- navy/purple Pausa MX styling
+- example copy: “MX$999 x 12 looks small. ¿Qué más cae ese mes?”
+- CTA: “Haz el Quick Check”
+- visible uncertainty label
+- no fake testimonials or metrics
 
-### 5.1 User pricing flow
+Expected path:
+`assets/mockup-pausa-mx-w15.png`
 
+## 7. Creative range — 3 series / 6 concepts
+### SERIES A — Antes de comprar
+**A1 — FINISHED:** “MX$999 x 12 looks small. ¿Qué más cae ese mes?”  
+Format: square share card. CTA: “Haz el Quick Check.”
+
+**A2 — SKETCH:** “El pago mensual no es toda la decisión.”  
+Format: short vertical story/reel concept.
+
+### SERIES B — Lo que falta en checkout
+**B1 — FINISHED:** “Checkout te muestra la venta. Pausa MX te muestra lo que falta.”  
+Format: vertical 3-panel story/carousel. CTA: “Ver el ejemplo.”
+
+**B2 — SKETCH:** “¿Y si cae en la misma quincena que tus otros pagos?”  
+Format: comparison card.
+
+### SERIES C — Haz la cuenta conmigo
+**C1 — FINISHED:** “Compra: MX$6,000. 6 pagos. ¿Qué cambia?”  
+Format: interactive landing-page block. CTA: “Prueba con tus números.”
+
+**C2 — SKETCH:** “Dos compras, mismo pago mensual. ¿Misma decisión?”  
+Format: side-by-side comparison.
+
+## 8. Real input → method → useful output
+**Input:** invented demo scenario, clearly labeled:
+- product price MX$11,988
+- 12 installments
+- displayed payment MX$999/month
+
+**Method:**
+1. Research the purchase moment.
+2. Draft one bounded question.
+3. Create the visual.
+4. Check every claim.
+5. Review brand style.
+6. Revise for clarity.
+7. Human approval before publication.
+
+**Output:**
+“MX$999 x 12 looks small. ¿Qué más cae ese mes?”
+
+Then:
+“Pausa MX does not approve or reject the purchase. It helps you see the commitment before checkout.”
+
+CTA:
+“Haz el Quick Check.”
+
+## 9. Creative process
 ```mermaid
 flowchart TD
-    A[User opens Pausa MX] --> B[Quick Check]
-    B --> C[Decision result]
-    C --> D{Needs more than core check?}
-    D -- No --> E[Continue with Free]
-    D -- Yes --> F[Open /pricing]
-    F --> G[Compare Free / Plus / Partner]
-    G --> H[Open revenue/value explanation]
-    H --> I{User chooses action}
-    I -- Stay Free --> E
-    I -- Explore Plus --> J[Paid CTA - hypothesis only unless checkout exists]
-    I -- Partner interest --> K[Partner contact / interest CTA]
+    A[Research input] --> B[Writing]
+    B --> C[Visual production]
+    C --> D[Evidence and claim check]
+    D --> E[Style review]
+    E --> F{Human approval}
+    F -- Revise --> B
+    F -- Approved --> G[Publish or share privately]
+    G --> H[Observe real response]
+    H --> I[Record result honestly]
+    I --> J[Revise next asset]
 ```
 
-### 5.2 Revenue simulator flow
+### Role checks
+| Role | Input | Output | Quality check |
+|---|---|---|---|
+| Research | purchase situation | grounded scenario | Is it realistic and labeled? |
+| Writing | scenario + product truth | hook/body/CTA | Is every claim defensible? |
+| Visual | approved copy | asset | Does it demonstrate the product? |
+| Claim check | draft | approved/rejected claims | Any invented result or false certainty? |
+| Style review | checked asset | on-brand version | Calm, concrete, bounded? |
+| Human approval | final draft | publish/revise | Would I defend every line to a user? |
 
-```mermaid
-flowchart TD
-    A[Open simulator] --> B[Enter active users]
-    B --> C[Enter paid conversion %]
-    C --> D[Enter monthly price]
-    D --> E[Optional monthly cost-to-serve]
-    E --> F[Validate inputs]
-    F --> G[Calculate paid users]
-    G --> H[Calculate monthly revenue]
-    H --> I[Calculate annual revenue]
-    I --> J[Calculate contribution]
-    J --> K[Show base + downside scenario]
-    K --> L{Save scenario?}
-    L -- Yes --> M[Save locally]
-    L -- No --> N[End]
-    M --> N
-```
-
-### 5.3 Swimlane
-
+## 10. Actor flow
 ```mermaid
 flowchart LR
+    subgraph F[FOUNDER / HUMAN]
+        F1[Choose need moment]
+        F2[Approve claims]
+        F3[Approve asset]
+        F4[Record real result]
+    end
+    subgraph AI[AI SUPPORT]
+        A1[Research support]
+        A2[Draft copy]
+        A3[Visual options]
+        A4[Claim/style review]
+    end
+    subgraph P[PAUSA MX PRODUCT]
+        P1[Receive visitor]
+        P2[Show example]
+        P3[Open Quick Check]
+    end
     subgraph U[USER]
-      U1[Views pricing]
-      U2[Changes simulator assumptions]
-      U3[Chooses Free / Plus / Partner interest]
+        U1[Sees asset]
+        U2[Chooses whether to act]
+        U3[Uses or ignores tool]
     end
-
-    subgraph S[PAUSA MX SYSTEM]
-      S1[Validates numbers]
-      S2[Calculates projections]
-      S3[Saves scenario locally]
-      S4[Logs safe categorical events]
-    end
-
-    subgraph B[BUSINESS LOGIC]
-      B1[Defines tier boundaries]
-      B2[Applies deterministic revenue math]
-      B3[Labels hypotheses and uncertainty]
-    end
-
-    U1 --> B1
-    U2 --> S1
-    S1 --> B2
-    B2 --> S2
-    S2 --> U3
-    U3 --> S4
-    U2 --> S3
-    B3 --> U1
+    F1 --> A1 --> A2 --> A3 --> A4 --> F2 --> F3 --> U1 --> U2 --> P1 --> P2 --> P3 --> U3 --> F4
 ```
 
----
+## 11. Distribution test
+**Audience:** Mexican online shoppers considering installment purchases.  
+**Channel:** permission-based one-to-one outreach or a shareable venture page sent to opted-in contacts.
 
-## 6. Benchmark line
+**Two pieces to test:**
+- A1: “MX$999 x 12 looks small...”
+- B1: “Checkout te muestra la venta...”
 
-**Best existing global benchmark:** Rocket Money uses a Free tier plus paid Premium options and treats pricing itself as part of the product experience.
+**Same next action:** both lead to the working Quick Check.
 
-**How Pausa MX differs/localizes:** Pausa MX is a narrower Mexican pre-purchase decision tool, so it cannot copy U.S. personal-finance pricing; it must compete against a strong free substitute and keep the core financial result independent from who pays.
+Record only what actually happens:
+- number who actually received it
+- observable opens/clicks
+- Quick Check starts if observable
+- replies
+- confusion/rejection
+- completed next action
 
-Additional reference points:
-- YNAB: premium full-budgeting subscription.
-- PocketGuard: recurring and lifetime pricing around ongoing budgeting/automation.
+**Evidence rule:** zero response is valid. A like is not adoption. A click is not validated demand.
 
-These are benchmarks, not proof that Pausa MX can charge the same amount.
+## 12. Expected result — before testing
+Hypothesis only:
+A concrete installment example should create more useful attention than generic financial-wellness copy because it mirrors the immediate decision.
 
----
+The test may disconfirm this.
 
-## 7. Pricing hypothesis
+## 13. Honest results — fill only after real test
+### A1
+- Sent/shared to:
+- Observable reach:
+- Clicks/opens:
+- Quick Check starts:
+- Replies:
+- Result:
+- Keep/change:
 
-### Tier 1 — Free
-**Price:** MX$0  
-**Segment:** individual shopper  
-**Includes:**
-- core Quick Check
-- deterministic purchase math
-- uncertainty labels
-- buyer-controlled result
-- core safety/decision guardrails
-- up to 3 saved simulator scenarios
+### B1
+- Sent/shared to:
+- Observable reach:
+- Clicks/opens:
+- Quick Check starts:
+- Replies:
+- Result:
+- Keep/change:
 
-### Tier 2 — Plus
-**Starting hypothesis:** MX$59/month  
-**Segment:** frequent individual shopper  
-**Potential paid convenience:**
-- saved preferences
-- purchase history
-- more saved scenarios
-- richer exports
-- optional alerts/reminders
-- convenience features only
+Do not complete until the real test occurs.
 
-**Never paywalled:**
-- truthful math
-- uncertainty
-- safety wording
-- ability to continue or wait
-- core recommendation logic
+## 14. Benchmark / local adaptation
+### NerdWallet calculators
+Gets right: content leads directly into a useful tool.  
+Local adaptation: narrower purchase moment, MXN, installment language, Mexican checkout context.
 
-### Tier 3 — Partner
-**Starting hypothesis:** pricing not validated  
-**Segment:** employer benefits / financial-wellness partner  
-**Possible value:**
-- program access
-- aggregate non-financial usage reporting
-- deployment/support tooling
+### Rocket Money Learning Hub
+Gets right: education lives close to product action.  
+Local adaptation: no broad curriculum and no implication of bank-connected automation.
 
-Partner payment must never change the shopper-facing recommendation.
+### PROFECO consumer guidance
+Gets right: practical, concrete consumer decision guidance.  
+Pausa MX difference: interactive personal consequence check; no claim to be a regulator or public authority.
 
----
+## 15. Shadow clause
+**Harm:** turning financial anxiety into engagement bait.
 
-## 8. Revenue simulator assumptions
+**Design decisions:**
+- no shame
+- no fake urgency
+- no countdowns
+- no invented testimonials
+- no debt-prevention claims
+- no fabricated savings
+- no partner control over message
+- uncertainty visible
+- buyer-controlled action
+- human approval before publication
 
-### Required inputs
-- active users
-- paid conversion rate (%)
-- monthly paid price (MXN)
-
-### Optional input
-- estimated monthly cost-to-serve per paid user
-
-### Outputs
-- paid users
-- monthly revenue
-- annual revenue
-- monthly variable cost
-- monthly contribution
-- annual contribution
-- downside case
-
-### Default hypotheses
-Defaults are examples only and must be labeled visibly:
-- 300 active users
-- 5% paid conversion
-- MX$59/month
-- MX$10/month cost-to-serve
-- downside conversion: 1%
-
-No default may be presented as observed market data.
-
----
-
-## 9. 10:1 Memo structure for `/about`
-
-### What the user does today
-A shopper reconstructs affordability using a calculator, banking app, installment dates, and memory.
-
-### What it costs
-- direct money: usually MX$0
-- time: unmeasured
-- cognitive effort: multiple tools / repeated reconstruction
-- risk: missed overlapping payments, unknown fees, or misunderstood total commitment
-
-### Pausa MX price hypothesis
-- Free: core check
-- Plus: MX$59/month test price
-
-### Why 10:1 might hold
-The plausible 10:1 case is not “better arithmetic.” It is reducing the effort required to surface a financially meaningful consequence before checkout.
-
-### What is still unverified
-- actual time saved
-- repeated use
-- willingness to pay
-- paid conversion
-- frequency of avoided mistakes
-- employer/partner willingness to pay
-
-Therefore, the 10:1 case remains a hypothesis until measured.
-
----
-
-## 10. Long-view — 3 years
-
-If this slice works, Pausa MX becomes a trusted Mexican pre-purchase decision layer rather than a generic budgeting app. It could combine purchase checks, saved personal constraints, transparent pricing, and buyer-aligned benefits partnerships while keeping the financial decision under the user's control. The load-bearing wall is independence: no payer, retailer, lender, or paid tier can alter the core financial truth shown to the user.
-
----
-
-## 11. Scope cut — what I am NOT building
-
-This week I am not building:
-
-- bank connections
-- card/account aggregation
-- lender integrations
-- retailer integrations
-- dynamic personalized pricing
-- AI-generated affordability verdicts
-- credit recommendations
-- real lending offers
-- a marketplace
+## 16. Scope cut
+Not building:
+- public influencer account
+- ten-post quota
+- paid ads
+- purchased followers
+- automated publishing
+- autonomous agent framework
+- bank/lender/retailer integrations
+- personalized financial profiling
+- debt counseling
 - full budgeting
-- production billing unless needed for a safe test
-- remote storage of financial inputs
-- personal financial profiles
-- partner dashboards with individual financial data
-- claims that MX$59 is validated
-- claims that conversion defaults are market evidence
+- fake waitlist demand
+- fake analytics
+- fake testimonials
+- broad “Gen Z finance” strategy
 
----
+## 17. Architecture / stack delta
+Week 15 reuses the existing Week 14 application.
 
-## 12. Architecture + stack
+| Layer | Week 15 use |
+|---|---|
+| Next.js + React + TypeScript | keep existing product and add distribution route/components |
+| Tailwind | campaign system and brand layout |
+| Zod | validate any new input/capture |
+| Deterministic finance logic | unchanged |
+| localStorage | existing local scenarios/analytics |
+| Static assets | campaign creative |
+| Analytics | safe categorical events only |
+| Vercel | preserve deployment history |
+| AI | assist research/writing/visual review; never auto-publish |
 
-| Layer | Technology | Purpose |
-|---|---|---|
-| Frontend | Next.js + React + TypeScript | pricing UI, simulator, about memo |
-| Styling | Tailwind CSS | responsive visual system |
-| Validation | Zod | validate all pricing/simulator inputs |
-| Finance / revenue logic | deterministic TypeScript | pricing projections and downside math |
-| Scenario storage | browser localStorage | save simulator scenarios without remote personal data |
-| Analytics | local/browser-safe event log | funnel instrumentation without financial values |
-| Tests | Vitest + Testing Library | logic, UI states, accessibility, regression |
-| Deployment | Vercel | production URL |
-| AI | none required for pricing math | no AI-generated pricing truth |
+## 18. Safe campaign analytics
+Allowed:
+- `campaign_asset_viewed`
+- `campaign_cta_clicked`
+- `quick_check_from_campaign_started`
+- `venture_page_viewed`
 
----
+Safe metadata:
+- series ID A/B/C
+- asset ID A1/B1/C1
+- route
+- timestamp
+- anonymous session ID
 
-## 13. Safe analytics events
+Never log financial values, income, expenses, names, emails, or contact identities.
 
-Allowed event names:
+A campaign click is not adoption.
 
-- `pricing_viewed`
-- `tier_free_viewed`
-- `tier_plus_viewed`
-- `tier_partner_viewed`
-- `simulator_started`
-- `simulator_completed`
-- `scenario_saved`
-- `scenario_deleted`
-- `plus_cta_clicked`
-- `partner_cta_clicked`
-- `ten_to_one_memo_viewed`
+## 19. Mechanical test plan
+### Distribution route
+- audience visible
+- promise visible
+- forbidden promise absent
+- CTA reaches Quick Check
+- no asset route 404s
 
-Never log:
-- purchase price
-- installment amounts
-- income
-- expenses
-- user-entered financial values
-- names
-- email
-- full comments
-- fingerprinting data
+### Brand/copy
+- no “prevents debt”
+- no “guaranteed affordability”
+- no invented savings
+- no shame/fear language
+- uncertainty visible where needed
 
-A CTA click is intent telemetry, not payment evidence.
+### Assets
+- A1 renders
+- B1 renders
+- C1 renders
+- at least two formats represented
+- every finished asset has one next action
 
----
+### Analytics
+- one event per intended action
+- asset ID allowlisted
+- no financial values in event metadata
+- CTA event is not labeled adoption/conversion
 
-## 14. Security floor
+### Regression
+- Quick Check still works
+- `/pricing` still works
+- `/about` still works
+- saved scenarios still work
+- Week 14 tests remain passing
 
-1. No secrets in code or repo.
-2. No auth is required if Week 14 continues using only local, non-personal scenario storage.
-3. If remote personal data is introduced, Supabase Auth + RLS becomes mandatory before deploy.
-4. All numeric inputs must use type/range validation.
-5. No real personal financial data in demos or seeds.
-6. Financial calculations remain deterministic.
-7. Simulated data is labeled.
-8. Saved scenarios must be deletable locally.
+Do not invent a bug. If a real reproduced failure appears, fix it, add regression coverage, and redeploy.
 
----
+## 20. Synthetic persona test
+**Mariana, 27**
+- shops online several times per month
+- understands monthly payment better than total commitment
+- uses calculator and bank app
+- dislikes generic budgeting content
+- distrusts dramatic financial advice
+- ignores content that feels like an ad
 
-## 15. Test plan
+Pressure-test:
+- Does she recognize the purchase moment?
+- Does the hook feel useful or manipulative?
+- Does she understand what Pausa MX does?
+- Is the CTA obvious?
+- Does she know the example is illustrative?
+- Would it feel like generic AI finance content?
+- Does the visual earn enough trust to click?
 
-### Mechanical pass
+Fix the worst reproduced confusion and retest.
 
-#### Pricing UI
-- `/pricing` loads
-- 2–3 tiers visible
-- Free/paid distinction understandable
-- two customer segments visible
-- Plus price explicitly labeled as hypothesis
-- core financial truth is not paywalled
+This remains synthetic and does not replace real audience evidence.
 
-#### Simulator logic
-- users cannot be negative
-- conversion constrained to 0–100%
-- price cannot be negative
-- cost cannot be negative
-- monthly revenue = paid users × price
-- annual revenue = monthly revenue × 12
-- contribution subtracts variable costs
-- downside scenario uses visibly different conversion assumption
-- rounding is consistent
-- zero-user case works
-- zero-conversion case works
-- 100%-conversion case works
-- invalid text does not calculate
+## 21. Three-year direction
+If this slice works, Pausa MX becomes a trusted pre-purchase decision layer whose distribution is built from useful decision demonstrations rather than generic financial content. The content system would turn real purchase situations into transparent examples that lead directly into the tool while preserving independence, evidence, and buyer control. The brand advantage is not volume; it is being recognizable for one calm, useful moment before checkout.
 
-#### Saved scenarios
-- save one scenario
-- save at least three scenarios
-- reload page and retain scenarios
-- delete scenario
-- corrupted local data fails safely
-- duplicate names handled safely
+## 22. Commit/deployment plan
+Preserve the existing venture history. Do not create artificial commits.
 
-#### 10:1 Memo
-- current alternative visible
-- direct cost described honestly
-- unmeasured time/risk labeled
-- price visible
-- unverified claims labeled
-- no “10:1 proven” language
+Meaningful Week 15 commits may include:
+1. `docs: update packet for week 15 distribution`
+2. `feat: add week 15 venture positioning`
+3. `feat: add campaign asset system`
+4. `feat: add shareable campaign route`
+5. `feat: instrument safe campaign analytics`
+6. `test: cover week 15 distribution constraints`
+7. `fix: <only if a real reproduced failure exists>`
+8. `docs: record week 15 decisions and audience test`
 
-#### Analytics
-- one pricing-view event per page view
-- simulator completion only after valid calculation
-- scenario save only after successful save
-- CTA event does not masquerade as conversion/payment
-- no financial values enter metadata
-
-### Persona pass
-
-Synthetic persona:
-**Mariana, 27**, shops online several times per month, understands monthly payments better than total commitment, uses her banking app and calculator, dislikes budgeting apps, and becomes skeptical when a financial app asks for a subscription.
-
-Questions to pressure-test:
-- Does she understand what remains free?
-- Does MX$59/month feel like a charge for math?
-- Can she understand the simulator without thinking the projection is a promise?
-- Does she know the numbers are hypotheses?
-- Does she confuse “Plus” with a safer recommendation?
-- Does “Partner” make her suspect employer/retailer influence?
-- Can she delete saved scenarios?
-- Would she quit because the pricing page is too business-oriented?
-
-Fix the worst confusion and redeploy.
-
----
-
-## 16. Commit plan
-
-Minimum planned commits:
-
-1. `docs: establish week 14 pricing packet`
-2. `feat: add pricing tiers and free paid boundary`
-3. `feat: add deterministic revenue simulator`
-4. `feat: add local saved pricing scenarios`
-5. `feat: add 10 to 1 memo`
-6. `feat: instrument safe pricing analytics`
-7. `test: cover pricing and simulator constraints`
-8. `fix: resolve mechanical test failure`
-9. `fix: resolve persona test confusion`
-10. `docs: record week 14 decisions and risks`
-
-At least two production deploys:
-- Deploy 1: first complete pricing slice
-- Deploy 2: after mechanical/persona fix
-
----
-
-## 17. Session Close rule
-
-At the end of every build session:
-
+## 23. Session Close
 1. Update `DECISIONS.md`.
-2. Record the next first move.
+2. Record next first move.
 3. Run tests.
 4. Run production build.
-5. Check git diff.
+5. Check diff.
 6. Commit.
 7. Push.
-8. Verify production deploy.
+8. Verify deployment.
+9. Record only real audience-test results.
 
----
+## 24. Week 15 decision
+The first audience is not “young people who want financial wellness.”
 
-## 18. Decision this packet makes
+It is:
 
-Week 14 treats pricing as a product hypothesis, not a decorative business number.
+**Mexican online shoppers considering installment purchases at or near checkout.**
 
-The pricing page must expose the offer clearly.  
-The simulator must expose the assumptions clearly.  
-The analytics must expose behavior without pretending behavior equals payment.  
-The free tier must preserve the same financial truth as the paid tier.
+The distribution strategy is:
 
-**TECHNOLOGIST position:** pricing infrastructure is commodity; pricing evidence is not.
+**Demonstrate one concrete purchase decision, show uncertainty honestly, and lead directly to the Quick Check.**
